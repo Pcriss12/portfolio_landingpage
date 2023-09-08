@@ -1,0 +1,29 @@
+---
+import heroImage from '@assets/images/hero-Recovered.png';
+import { Image } from '@astrojs/image/components';
+---
+
+<section
+	data-testid="hero"
+	class="flex h-screen flex-col-reverse items-center justify-center lg:flex-row"
+>
+	<div class="mb-10 flex flex-col items-center lg:mb-0 lg:w-1/2">
+		<div>
+			<h1 class="mb-10 font-monospace text-3xl text-black lg:text-5xl">
+				Hi! My name is <br><span class="text-green">Paula Rodriguez</span> and <br>I am a web developer 
+			</h1>
+		</div>
+
+	</div>
+	<div data-testid="hero-img" class="mb-10 flex w-1/2 items-center justify-center">
+		<Image
+			src={heroImage}
+			alt="Coding girl"
+			aspectRatio="4:4"
+			format="png"
+			width={600}
+			height={600}
+			loading="eager"
+		/>
+	</div>
+</section>
