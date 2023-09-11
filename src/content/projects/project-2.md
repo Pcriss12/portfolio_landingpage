@@ -1,7 +1,8 @@
 ---
 inProgress: false
-title: Project title
+title: API Pokemon
+src: "src/assets/images/pokemon.jpg"
 img_alt: project image alt text
-link: https://github.com/veranikabarel?tab=repositories
-tags: ['React', 'CSS', 'Typescript']
+link: https://github.com/Pcriss12/proyect-1
+tags: ['Astro', 'CSS3', 'HTML5', 'SASS', 'Typescript']
 ---

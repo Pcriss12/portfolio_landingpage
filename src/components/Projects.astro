@@ -20,6 +20,7 @@ const projects = await getCollection('projects', ({ data }) => {
 				<Card
 					url={project.data.link}
 					title={project.data.title}
+					image={project.data.src}
 					alt={project.data.img_alt}
 					tags={project.data.tags}
 				/>
@@ -27,7 +28,7 @@ const projects = await getCollection('projects', ({ data }) => {
 		}
 	</div>
 	<a
-		href="https://github.com/"
+		href="https://github.com/Pcriss12"
 		target="_blank"
 		rel="noopener"
 		class="flex flex-row text-black hover:text-green"
