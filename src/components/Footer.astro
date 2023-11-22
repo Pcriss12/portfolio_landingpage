@@ -1,14 +1,22 @@
-<footer data-testid="footer" class="p-6 text-center text-sm text-black mx-auto max-w-screen-xl px-5">
+---
+
+import Social from '../components/ui/Social.astro';
+---
+
+<footer data-testid="footer" class="p-6 text-center text-sm text-black mx-auto max-w-screen-xl px-5 pb-6">
+	
+	<section
+	data-testid="contact"
+	id="contact"
+	class="flex flex-col flex-wrap items-center justify-center gap-8 text-black lg:mb-0 lg:h-screen"
+>
+	<div class="grid grid-cols-2 gap-8 lg:gap-20">
+		<Social />
+	</div>
 	<p>
-		Copyright © {new Date().getFullYear()}. All rights reserved. Made by <a
-			href="https://github.com/veranikabarel"
-			target="_blank"
-			rel="noopener"
-		>
-			<span class="text-green"> Veranika Kasparevych</span>
-		</a>
-		Assets designed by <a href="www.freepik.com" target="_blank" rel="noopener"
-			><span class="text-green">Freepik</span></a
-		>
+		{new Date().getFullYear()}
+			<span class="text-green"> Paula Rodriguez Social Media Contact</span>
+		
 	</p>
+</section>
 </footer>
